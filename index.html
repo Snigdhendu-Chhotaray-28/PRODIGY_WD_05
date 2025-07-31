@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://media.licdn.com/dms/image/v2/D4D0BAQEMRfX2ouW2lw/company-logo_200_200/company-logo_200_200/0/1727855093948/prodigy_infotech_logo?e=1748476800&v=beta&t=H1GiedngzyVk14GBqz4wbP5fksRAi_r_8a3aI3Et3hA" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App - Prodigy</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <br>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getCityWeather()">Get Weather</button>
+        <button onclick="getLocationWeather()">Get Weather by Location</button>
+        <div class="loading">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+        </div>
+        <div class="loadingTxt"></div>
+        <div id="weather"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
